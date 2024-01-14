@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./script/script.js"></script>
+    <title>tatilbiletim</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="logo"></a>
+      <ul>
+        <li>
+          <a class="nav-item" href="./pages/ucak.html">
+            <p>Uçak</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" href="./pages/oteller.html">
+            <p>Otel</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" href="./pages/turlar.html">
+            <p>Tur</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" href="./pages/kampanyalar.html">Kampanyalar</a>
+        </li>
+      </ul>
+      <div class="icons">
+        <a href="./kayit_ol.html">
+          <p>Kayıt Ol</p>
+        </a>
+        <a href="./giris_yap.html" class="bg-black">
+          <p>Giriş Yap</p>
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="slide">
+      <div class="linear">
+        <div class="box">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTabs(event, 'Otel')"
+              id="defaultOpen"
+            >
+              Otel
+            </button>
+            <button class="tablinks" onclick="openTabs(event, 'Ucak')">
+              Uçak Bileti
+            </button>
+            <button class="tablinks" onclick="openTabs(event, 'PNR')">
+              PNR Sorgula
+            </button>
+          </div>
+
+          <div id="Otel" class="tabcontent">
+            <div class="horizontal">
+              <input
+                type="text"
+                placeholder="Otel, Şehir, Bölge veya Tema Adı"
+              />
+              <input type="date" placeholder="26 - 21 Aralık" />
+              <input type="text" placeholder="1 Yetişkin" />
+              <button>
+                <i class="ph ph-magnifying-glass"></i>
+                <p>Otel Ara</p>
+              </button>
+            </div>
+          </div>
+
+          <div id="Ucak" class="tabcontent">
+            <div class="horizontal">
+              <input type="text" placeholder="İstanbul" />
+              <input type="text" placeholder="Ankara" />
+              <input type="date" placeholder="26 - 21 Aralık" />
+              <input type="text" placeholder="1 Yetişkin" />
+              <button>
+                <i class="ph ph-magnifying-glass"></i>
+                <p>Bul</p>
+              </button>
+            </div>
+          </div>
+
+          <div id="PNR" class="tabcontent">
+            <div class="horizontal">
+              <input type="text" placeholder="PNR Numaranız" />
+              <button>
+                <i class="ph ph-magnifying-glass"></i>
+                <p>Sorgula</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Popüler Şehirler</h2>
+      <div class="horizontal">
+        <a
+          href="./pages/oteller.html"
+          class="card"
+          style="
+            background-image: url('https://a.cdn-hotels.com/gdcs/production6/d781/3bae040b-2afb-4b11-9542-859eeb8ebaf1.jpg');
+          "
+        >
+          <div class="linear">
+            <p>İstanbul</p>
+          </div>
+        </a>
+        <a
+          href="./pages/oteller.html"
+          class="card"
+          style="
+            background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/1e/3d/9f/6a/izmir-town.jpg');
+          "
+        >
+          <div class="linear">
+            <p>İzmir</p>
+          </div>
+        </a>
+        <a
+          href="./pages/oteller.html"
+          class="card"
+          style="
+            background-image: url('https://iaysr.tmgrup.com.tr/5c0960/780/411/0/125/1024/663?u=https://iysr.tmgrup.com.tr/2022/09/14/karadenizin-incisi-samsun-1663171659842.jpeg');
+          "
+        >
+          <div class="linear">
+            <p>Samsun</p>
+          </div>
+        </a>
+        <a
+          href="./pages/oteller.html"
+          class="card"
+          style="
+            background-image: url('https://itgp-cdn.tga.gov.tr/other/1-denizli-pamukkale.jpg');
+          "
+        >
+          <div class="linear">
+            <p>Denizli</p>
+          </div>
+        </a>
+        <a
+          href="./pages/oteller.html"
+          class="card"
+          style="
+            background-image: url('https://www.turkeyexpert.com/content/blogs/291/1_kocaeli-izmit-an-alternative-location-near-istanbul2.jpg');
+          "
+        >
+          <div class="linear">
+            <p>Kocaeli</p>
+          </div>
+        </a>
+      </div>
+      <h2>Tatil Rehberi</h2>
+      <div class="horizontal">
+        <div class="blog">
+          <img
+            src="https://cdn.tatilbudur.com/banner/2023-10/780x328/peglenceli-dolu-yilbasi-rotalarini-hemen-kesfedinp-1698411525.jpg"
+            width="320px"
+            height="140px"
+          />
+          <h3>Eğlence Dolu Yılbaşı Rotalarını Hemen Keşfedin!</h3>
+        </div>
+        <div class="blog">
+          <img
+            src="https://cdn.tatilbudur.net/banner/2022-06/1180x400/kultur-turlari-1656412380.jpg"
+            width="320px"
+            height="140px"
+          />
+          <h3>
+            Türkiye'nin Her Noktasını TatilBudur'la Keşfetmeye Ne Dersiniz?
+          </h3>
+        </div>
+        <div class="blog">
+          <img
+            src="https://cdn.tatilbudur.net/banner/2022-06/1180x400/yurt-disi-turlari-1656412224.jpg"
+            width="320px"
+            height="140px"
+          />
+          <h3>Dünyayı Dolaşmaya Hazır Mısınız?</h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="./assets/logo.png" width="200px" />
+      <div class="footer-menu">
+        <div class="footer-list">
+          <h3>Oteller</h3>
+          <a href="">İstanbul Otelleri</a>
+          <a href="">Ankara Otelleri</a>
+          <a href="">Denizli Otelleri</a>
+          <a href="">İzmir Otelleri</a>
+          <a href="">Kocaeli Otelleri</a>
+        </div>
+        <div class="footer-list">
+          <h3>Turlar</h3>
+          <a href="">Avrupa Turu</a>
+          <a href="">Balkan Turu</a>
+          <a href="">Karadeniz Turu</a>
+          <a href="">Ege Turu</a>
+          <a href="">Anadolu Turu</a>
+        </div>
+        <div class="footer-list">
+          <h3>Popüler Şehirler</h3>
+          <a href="">İstanbul</a>
+          <a href="">Ankara</a>
+          <a href="">Denizli</a>
+          <a href="">İzmir</a>
+          <a href="">Kocaeli</a>
+        </div>
+        <div class="footer-list">
+          <h3>Kurumsal</h3>
+          <a href="">Biz Kimiz?</a>
+          <a href="">İletişim</a>
+          <a href="">Ödüllerimiz</a>
+          <a href="">Gizlilik Politikası</a>
+          <a href="">Kişisel Verilerin Korunması</a>
+        </div>
+        <div class="footer-contact">
+          <b>Mail</b>
+          <a href="" class="mail">eraycnt@outlook.com</a>
+          <b>Telefon</b>
+          <a href="" class="tel">+90 (544) 446 0752</a>
+          <b>Sosyal Medya</b>
+          <div class="social">
+            <a href="">
+              <i class="ph ph-facebook-logo"></i>
+            </a>
+            <a href="">
+              <i class="ph ph-instagram-logo"></i>
+            </a>
+            <a href="">
+              <i class="ph ph-twitter-logo"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="create">
+        <p>created by</p>
+        <a href="">erayjs</a>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
+</html>

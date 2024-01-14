@@ -1,0 +1,190 @@
+.logo {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fff;
+  width: 200px;
+  height: 80px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/light-logo.png");
+}
+
+nav {
+  display: flex;
+  position: fixed !important;
+  z-index: 2;
+  background: transparent;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  height: 90px;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-active {
+  display: flex;
+  position: relative !important;
+  z-index: 2;
+  background: transparent;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  height: 90px;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 25px 54px -29px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 25px 54px -29px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 25px 54px -29px rgba(0, 0, 0, 0.2);
+}
+
+nav:hover {
+  background-color: #fff !important;
+}
+
+nav:hover > ul a {
+  color: #000 !important;
+}
+
+nav:hover > .logo {
+  color: var(--primary-color) !important;
+}
+
+nav:hover > .icons a {
+  border: 1px solid #000 !important;
+  color: #000 !important;
+}
+
+nav:hover > .icons .bg-black {
+  color: #fff !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+nav:hover > ul a:hover {
+  color: var(--primary-color) !important;
+}
+
+nav:hover > .logo {
+  background-image: url("../assets/logo.png") !important;
+}
+
+.nav-active > .logo {
+  color: var(--primary-color) !important;
+}
+
+.nav-active > ul a {
+  color: #000 !important;
+}
+
+.nav-active > .icons a {
+  border: 1px solid #000 !important;
+  color: #000 !important;
+}
+
+.nav-active > .icons .bg-black {
+  color: #fff !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+.nav-active > ul a:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-active > .logo {
+  background-image: url("../assets/logo.png") !important;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  height: 90px;
+}
+
+li {
+  height: 88px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  color: #fff;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: 0.1s all;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-item i {
+  font-weight: bold;
+}
+
+ul li:hover {
+  color: var(--primary-color) !important;
+}
+
+ul a:hover {
+  border-bottom: 3px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons i {
+  font-size: 1.2rem;
+}
+
+.icons a {
+  border: 1px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  gap: 15px;
+  transition: 0.1s ease-in-out;
+}
+
+.bg-black {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    width: 140px;
+  }
+
+  nav ul {
+    display: none;
+  }
+  .icons {
+    gap: 5px;
+  }
+  .icons a {
+    font-size: 15px;
+    padding: 0.7rem 1rem;
+  }
+}
